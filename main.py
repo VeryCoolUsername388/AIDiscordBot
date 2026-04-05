@@ -3,7 +3,6 @@ from discord.ext import commands
 import logging
 from dotenv import load_dotenv
 import os
-import requests
 from ollamafreeapi import OllamaFreeAPI
 
 
@@ -119,6 +118,6 @@ async def secret2(ctx):
 @bot.command()
 async def cmds(ctx):
      await ctx.reply("ok theres uhh: 1. /normalrps (BORINGG) 2. /unfairrps (So you choose things like nuclear bomb) 3. /fairrps (So you choose normal things like Diamond) 4. *Secret Command* 5. *Secret Command 2*")
-     
+
 
 bot.run(token, log_handler=handler, log_level=logging.DEBUG)
