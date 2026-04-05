@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 import os
 from ollamafreeapi import OllamaFreeAPI
 
+port = 1024
 
 load_dotenv()
 token = os.getenv('DISCORD_TOKEN')
