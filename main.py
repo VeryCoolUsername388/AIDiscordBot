@@ -5,10 +5,10 @@ from dotenv import load_dotenv
 import os
 from ollamafreeapi import OllamaFreeAPI
 
-port = 1024
 
 load_dotenv()
 token = os.getenv('DISCORD_TOKEN')
+port = os.getenv('PORT')
 
 handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w')
 intents = discord.Intents.default()
